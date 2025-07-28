@@ -1,0 +1,9 @@
+venv/
+ref.md
+__pycache__/
+*.pyc
+.DS_Store
+.vscode/
+Collection_1/
+Collection_2/
+Collection_3/

@@ -1,0 +1,8 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+torch==2.7.1+cpu
+sentence-transformers==5.0.0
+langdetect==1.0.9
+stopwordsiso==0.6.1
+PyMuPDF==1.26.3
+pathlib2==2.3.7
