@@ -58,8 +58,8 @@ This approach uses Vector Similarity Search, Vector Embeddings for semantic unde
 2. Run the container:
    ```bash
    docker run --rm \
-     -v $(pwd)/sample_dataset/persona_input:/app/input:ro \
-     -v $(pwd)/sample_dataset/persona_output:/app/output \
+     -v $(pwd)/input:/app/input:ro \
+     -v $(pwd)/output:/app/output \
      --network none \
      challenge1b
    ```
@@ -73,5 +73,5 @@ This approach uses Vector Similarity Search, Vector Embeddings for semantic unde
 
 **Output:** For each collection, the container will generate:
 
-- `challenge1b_output.json` saved under the corresponding subfolder in `/app/output/`
+- `challenge1b_output.json` saved under the corresponding subfolder in `./output/`
 
