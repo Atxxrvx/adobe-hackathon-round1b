@@ -40,10 +40,9 @@ For the top-ranked sections, the system performs sentence-level analysis:
 ## Technical Advantages
 - **Scalability**: Batch processing with configurable batch sizes for optimal memory usage
 - **Multilingual Support**: Automatic language detection with appropriate stopword filtering
-- **GPU Acceleration**: Automatic CUDA detection for faster embedding computation
 - **Robust Error Handling**: Graceful fallbacks for edge cases in PDF processing and language detection
 
-This approach ensures high-precision extraction of the most relevant document sections while maintaining computational efficiency and supporting diverse multilingual
+This approach uses Vector Similarity Search, Vector Embeddings for semantic understanding of document content and user requirements, enabling matching between persona-specific job tasks and relevant PDF sections through multilingual transformer models.
 
 
 # Challenge 1B - Instructions
@@ -63,19 +62,6 @@ This approach ensures high-precision extraction of the most relevant document se
      -v $(pwd)/sample_dataset/persona_output:/app/output \
      --network none \
      challenge1b
-   ```
-
-## Local Setup & Run
-
-1. Install dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-2. Run:
-   ```bash
-   python analyze_documents.py
    ```
 
 ## Requirements
